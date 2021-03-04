@@ -1,0 +1,17 @@
+{
+  "name": "mobile-shopper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./sass/style.scss style.css --watch"
+  },
+  "author": "Gan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.32.8"
+  }
+}
