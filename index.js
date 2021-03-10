@@ -31,7 +31,7 @@ $(document).ready(function(){
     });
 
     //filter items on button click
-    $(".bunton-group").on("click","button",function(){
+    $(".button-group").on("click","button",function(){
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({filter:filterValue});
     })
