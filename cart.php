@@ -6,7 +6,7 @@
 <?php
 
     /* include Cart */
-    include('Template/_cart.php');
+    include('Template/_cart-template.php');
     /* include Cart */
 
     /* include New phones section */
