@@ -5,6 +5,10 @@
             $deletedrecord = $Cart->deleteCart($_POST['item_id']);
         }
 
+        //save for later
+        if(isset($_POST['whishlist-submit'])){
+            $Cart->saveForLater($_POST['item_id']);
+        }
     }
 ?>
 <section id="cart" class="py-3">
@@ -49,10 +53,12 @@
                             </div>
                             <form method="post">
                                 <input type="hidden" value="<?php echo $item['item_id']?? 0; ?>" name="item_id">
-
                                 <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
                             </form>
-                            <button type="submit" class="btn font-baloo text-danger px-3">Save for Later</button>
+                            <form method="post">
+                                <input type="hidden" value="<?php echo $item['item_id']?? 0; ?>" name="item_id">
+                                <button type="submit" name="whishlist-submit" class="btn font-baloo text-danger px-3">Save for Later</button>
+                            </form>
                         </div>
                         <!--  /product qty  -->
                     </div>
